@@ -1,4 +1,4 @@
-import { PrimaryButton, SecondaryButton } from '@/components/Buttons'
+import { PrimaryButton } from '@/components/Buttons'
 
 import * as S from "./styles";
 
@@ -13,7 +13,7 @@ export default function Hero() {
       </S.Description>
       <S.ButtonSection>
         <PrimaryButton>Iniciar leitura</PrimaryButton>
-        <SecondaryButton>Começar a escrever</SecondaryButton>
+        <PrimaryButton>Começar a escrever</PrimaryButton>
       </S.ButtonSection>
 
     </S.HeroContent>
