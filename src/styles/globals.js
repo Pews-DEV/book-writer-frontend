@@ -3,11 +3,12 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
   :root {
     --black: #000000;
+    --black-400: #292929;
     --white: #FFFFFF;
     --gray-100: #F7F8FA;
     --gray-200: #E1E3E5;
     --gray-400: #BDBDBD;
-    --gray-700: #606060;
+    --gray-700: #585858;
     --gray-blue-100: #EEF3F7;
     --gray-blue-200: #CBD0DC;
     --gray-blue-400: #A9B0B5;
@@ -18,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
     --blue-400: #22A8E1;
     --blue-500: #1F69C1;
     --blue-800: #253B80;
+    --purple-100: #790AE9;
+    --purple-600: #380968;
+    --purple-700: #220b43;
     --red-100: #FFF7F7;
     --red-200: #FFEBEC;
     --red-400: #EA6363;
@@ -41,18 +45,22 @@ const GlobalStyles = createGlobalStyle`
     --spacing-0: 0;
     --spacing-1: 4px;
     --spacing-2: 8px;
-    --spacing-3: 16px;
-    --spacing-4: 24px;
-    --spacing-5: 32px;
-    --spacing-6: 40px;
-    --spacing-7: 48px;
-    --spacing-8: 56px;
-    --spacing-9: 64px;
-    --spacing-10: 72px;
-    --spacing-11: 80px;
-    --spacing-12: 88px;
-    --spacing-13: 96px;
-    --spacing-14: 104px;
+    --spacing-3: 10px;
+    --spacing-4: 16px;
+    --spacing-5: 24px;
+    --spacing-6: 32px;
+    --spacing-7: 40px;
+    --spacing-8: 48px;
+    --spacing-9: 56px;
+    --spacing-10: 64px;
+    --spacing-11: 72px;
+    --spacing-12: 80px;
+    --spacing-13: 88px;
+    --spacing-14: 96px;
+    --spacing-15: 104px;
+    --spacing-16: 120px;
+    --spacing-17: 136px;
+    --spacing-18: 152px;
 
     --fontsize-massive: 64px;
     --fontsize-giant: 48px;
@@ -72,10 +80,10 @@ const GlobalStyles = createGlobalStyle`
     --fw-extrabold: 900;
   }
 
-  /* *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
-  } */
+  }
 
   *,
   *::before,
@@ -87,7 +95,8 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     color: var(--black);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    width: 100%;
     font-size: 87.5%; // 14px
 
     @media (max-width: 720px) {
@@ -98,6 +107,11 @@ const GlobalStyles = createGlobalStyle`
   body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+  }
+
+  a {
+    cursor: pointer;
   }
 
   ol, ul {
