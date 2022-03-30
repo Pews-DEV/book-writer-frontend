@@ -47,3 +47,9 @@ export const ModalButtom = styled.div`
 
   margin-top: var(--spacing-4);
 `
+
+export const ModalClose = styled.button`
+  position: absolute;
+  top: var(--spacing-2);
+  right: var(--spacing-3);
+`

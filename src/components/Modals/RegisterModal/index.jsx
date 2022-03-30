@@ -30,6 +30,7 @@ export default function RegisterModal(props) {
       onRequestClose={closeModal}
       contentLabel="Register Modal"
       style={customStyles}>
+        <S.ModalClose onClick={closeModal}>X</S.ModalClose>
         <S.ModalTitle>
           Junte-se Ao Book Write
         </S.ModalTitle>
