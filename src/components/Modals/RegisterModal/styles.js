@@ -29,11 +29,11 @@ export const ModalInput = styled.input`
   left: 480px;
   top: 256px;
 
-  border: 1px solid #790AE9;
+  border: 1px solid var(--purple-100);
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: var(--spacing-1);
 
-  margin-bottom: 25px
+  margin-bottom: var(--spacing-5);
 `
 
 export const ModalLabel = styled.label`
@@ -45,5 +45,5 @@ export const ModalButtom = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin-top: 15px
+  margin-top: var(--spacing-4);
 `
