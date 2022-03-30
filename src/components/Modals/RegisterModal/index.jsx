@@ -19,47 +19,38 @@ const customStyles = {
   },
 };
 
-export default function RegisterModal() {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
+export default function RegisterModal(props) {
   function closeModal() {
-    setIsOpen(false);
+    props.setModalIsOpen(false);
   }
 
   return (
-    <div>
-      <button onClick={openModal}> Inscreva-se </button>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Register Modal"
-        style={customStyles}>
-          <S.ModalTitle>
-            Junte-se Ao Book Write
-          </S.ModalTitle>
-          <S.ModalDescription>
-            Faça parte da comunidade global de leitores e
-            escritores, todos conectados através do poder
-            das histórias.
-          </S.ModalDescription>
-          <form>
-              <S.ModalLabel htmlFor="user">User Name</S.ModalLabel>
-              <S.ModalInput name="user" type="text" />
-              <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
-              <S.ModalInput name="email" type="text" />
-              <S.ModalLabel htmlFor="password">Password</S.ModalLabel>
-              <S.ModalInput name="password" type="text" />
-              <S.ModalButtom>
-                <SecondaryButton>
-                  Inscrever-se
-                </SecondaryButton>
-              </S.ModalButtom>
-          </form>
-      </Modal>
-    </div>
+    <Modal
+      isOpen={props.modalIsOpen}
+      onRequestClose={closeModal}
+      contentLabel="Register Modal"
+      style={customStyles}>
+        <S.ModalTitle>
+          Junte-se Ao Book Write
+        </S.ModalTitle>
+        <S.ModalDescription>
+          Faça parte da comunidade global de leitores e
+          escritores, todos conectados através do poder
+          das histórias.
+        </S.ModalDescription>
+        <form>
+            <S.ModalLabel htmlFor="user">User Name</S.ModalLabel>
+            <S.ModalInput name="user" type="text" />
+            <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
+            <S.ModalInput name="email" type="text" />
+            <S.ModalLabel htmlFor="password">Password</S.ModalLabel>
+            <S.ModalInput name="password" type="text" />
+            <S.ModalButtom>
+              <SecondaryButton>
+                Inscrever-se
+              </SecondaryButton>
+            </S.ModalButtom>
+        </form>
+    </Modal>
   );
 }

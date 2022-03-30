@@ -17,7 +17,7 @@ export const ModalDescription = styled.p`
   max-width: 283px;
 
   padding: var(--spacing-3) 0;
-  margin: 0 auto 25px auto;
+  margin: 0 auto var(--spacing-5) auto;
 
   text-align: center;
   font-size: var(--fontsize-small);
