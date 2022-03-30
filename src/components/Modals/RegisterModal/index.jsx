@@ -1,14 +1,17 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+import { SecondaryButton } from '@/components/Buttons'
+
 import * as S from "./styles";
 
 const customStyles = {
   content: {
     position: 'absolute',
-    margin: '0 auto',
+    margin: 'auto auto',
     width: '400px',
-    height: '600px',
+    height: '580px',
+    padding: '0 25px',
 
     background: '#FFFFFF',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
@@ -29,28 +32,33 @@ export default function RegisterModal() {
 
   return (
     <div>
-      <button onClick={openModal}> Iniciar Sessão </button>
+      <button onClick={openModal}> Inscreva-se </button>
       <Modal
-        isOpen={true}
+        isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Register Modal"
         style={customStyles}>
-          <S.ModalHeader>
+          <S.ModalTitle>
             Junte-se Ao Book Write
-          </S.ModalHeader>
+          </S.ModalTitle>
           <S.ModalDescription>
-            Faz parte da comunidade global de leitores e
-            escritores, todos conectados através poder
+            Faça parte da comunidade global de leitores e
+            escritores, todos conectados através do poder
             das histórias.
           </S.ModalDescription>
-          <S.ModalForm>
-              <label htmlFor="user">User Name</label>
+          <form>
+              <S.ModalLabel htmlFor="user">User Name</S.ModalLabel>
               <S.ModalInput name="user" type="text" />
-              <label htmlFor="email">E-mail</label>
+              <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
               <S.ModalInput name="email" type="text" />
-              <label htmlFor="password">Password</label>
+              <S.ModalLabel htmlFor="password">Password</S.ModalLabel>
               <S.ModalInput name="password" type="text" />
-          </S.ModalForm>
+              <S.ModalButtom>
+                <SecondaryButton>
+                  Inscrever-se
+                </SecondaryButton>
+              </S.ModalButtom>
+          </form>
       </Modal>
     </div>
   );
