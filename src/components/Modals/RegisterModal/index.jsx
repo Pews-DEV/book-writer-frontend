@@ -9,7 +9,7 @@ const customStyles = {
   content: {
     position: 'absolute',
     margin: 'auto auto',
-    maxWidth: '400px',
+    width: '400px',
     height: '580px',
     padding: '0 25px',
 
