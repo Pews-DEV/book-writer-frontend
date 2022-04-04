@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import Modal from 'react-modal';
 
 import { SecondaryButton } from '@/components/Buttons'
@@ -21,8 +21,12 @@ const customStyles = {
 
 export default function RegisterModal(props) {
   function closeModal() {
-    props.setModalIsOpen(false);
+    props.setModalIsOpen(false)
   }
+
+  useEffect(() => {
+    Modal.setAppElement('body')
+  },[])
 
   return (
     <Modal
