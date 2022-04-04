@@ -10,7 +10,12 @@ export const ModalTitle = styled.title`
   padding: var(--spacing-3) 0;
   margin-top: 20px;
 
-  font-size: var(--fontsize-extralarge);
+  font-size: var(--fontsize-medium);
+
+  @media {devices.mobileL} {
+    font-size: var(--fontsize-extralarge);
+  }
+
 `
 
 export const ModalDescription = styled.p`
@@ -20,7 +25,11 @@ export const ModalDescription = styled.p`
   margin: 0 auto var(--spacing-5) auto;
 
   text-align: center;
-  font-size: var(--fontsize-small);
+  font-size: var(--fontsize-extrasmall);
+
+  @media {devices.mobileL} {
+    font-size: var(--fontsize-small);
+  }
 `
 
 export const ModalInput = styled.input`
