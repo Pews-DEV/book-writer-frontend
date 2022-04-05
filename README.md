@@ -18,7 +18,7 @@ Esse é um projeto de colaboração construído com fins academicos. Todo o layo
 - [Github Actions](https://docs.github.com/pt/actions)
 
 
-## Contribuidores
+## Colaboradores
 
 - [pews-dev](https://github.com/Pews-DEV) - Designer | Frontend Developer;
 - [oopaze](https://github.com/oopaze) - FullStack Developer;
