@@ -1,5 +1,6 @@
 {
   "name": "book-writer-frontend",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,12 +13,13 @@
     "lint": "eslint src/ --ext js,jsx,ts,tsx --max-warnings=0",
     "lint:fix": "yarn lint --fix",
     "prepare": "husky install",
-    "pre-commit": "yarn lint --max-warnings=0"
+    "pre-commit": "yarn lint --max-warnings=0",
+    "lint-staged": "npx --no-install lint-staged"
   },
   "lint-staged": {
     "src/**/*": [
       "yarn lint:fix",
-      "yarn test --findRelatedTests --bail"
+      "yarn test --bail --findRelatedTests"
     ]
   },
   "dependencies": {
@@ -25,6 +27,7 @@
     "next-pwa": "5.4.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-modal": "3.14.4",
     "styled-components": "5.3.3"
   },
   "devDependencies": {
@@ -39,6 +42,9 @@
     "eslint-plugin-prettier": "4.0.0",
     "husky": "7.0.4",
     "jest": "27.5.1",
+    "jest-dom": "4.0.0",
+    "jest-styled-components": "7.0.8",
+    "lint-staged": "12.3.7",
     "prettier": "2.6.2",
     "prettier-eslint": "13.0.0"
   }
