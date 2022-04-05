@@ -12,11 +12,11 @@
   },
   "extends": [
     "eslint:recommended",
+    "prettier",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@next/next/recommended",
-    "prettier"
+    "plugin:@next/next/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
