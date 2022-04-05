@@ -19,13 +19,18 @@
     "plugin:@next/next/recommended"
   ],
   "parserOptions": {
+    "project": "./jsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": [
+    "react", 
+    "prettier",
+    "react-hooks" 
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
