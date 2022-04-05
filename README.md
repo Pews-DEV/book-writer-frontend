@@ -23,5 +23,5 @@ Esse é um projeto de colaboração construído com fins academicos. Todo o layo
 - [pews-dev](https://github.com/Pews-DEV) - Designer | Frontend Developer;
 - [oopaze](https://github.com/oopaze) - FullStack Developer;
 - [MichaelPereira31](https://github.com/Pews-DEV) - Backend Developer;
-- [gabrielduete](https://github.com/Pews-DEV) - Frontend;
-- [Carolinesousa](https://github.com/Carolinesousa) - Designer;
+- [gabrielduete](https://github.com/Pews-DEV) - Frontend Developer;
+- [Carolinesousa](https://github.com/Carolinesousa) - Designer.
