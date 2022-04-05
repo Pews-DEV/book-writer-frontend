@@ -1,14 +1,14 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-import { Image } from "@/styles/Image"
+import { Image } from '@/styles/Image'
 
-import * as S from "./styles"
+import * as S from './styles'
 
 import Logo from '@/assets/img/logo.png'
-import RegisterModal from "../Modals/RegisterModal"
+import RegisterModal from '../Modals/RegisterModal'
 
 export default function Navbar() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false)
 
   function handleOpenRegisterModal() {
     setModalIsOpen(true)
@@ -23,7 +23,10 @@ export default function Navbar() {
         <S.MenuItem> Iniciar Sessão </S.MenuItem>
         <S.MenuItem>
           <button onClick={handleOpenRegisterModal}> Inscreva-se </button>
-          <RegisterModal setModalIsOpen={setModalIsOpen} modalIsOpen={modalIsOpen} />
+          <RegisterModal
+            setModalIsOpen={setModalIsOpen}
+            modalIsOpen={modalIsOpen}
+          />
         </S.MenuItem>
       </S.Menu>
     </S.NavContainer>
