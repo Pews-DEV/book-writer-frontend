@@ -10,12 +10,14 @@ Ainda em estágio de desenvolvimento, a Book Writer é uma rede social OpenSourc
 
 - [pews-dev](https://github.com/Pews-DEV) - Designer | Frontend Developer;
 - [oopaze](https://github.com/oopaze) - FullStack Developer;
-- [MichaelPereira31](https://github.com/Pews-DEV) - Backend Developer;
-- [gabrielduete](https://github.com/Pews-DEV) - Frontend Developer;
+- [MichaelPereira31](https://github.com/MichaelPereira31) - Backend Developer;
+- [gabrielduete](https://github.com/gabrielduete) - Frontend Developer;
 - [Carolinesousa](https://github.com/Carolinesousa) - Designer.
 
 ## Tecnologias
 
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
 - [Javascript](https://www.w3schools.com/jsref/default.asp)
 - [Reactjs](https://pt-br.reactjs.org/docs/getting-started.html)
 - [Nextjs](https://nextjs.org/)
