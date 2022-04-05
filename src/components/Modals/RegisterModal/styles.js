@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { devices } from '@/utils/devices'
+
 export const ModalTitle = styled.title`
   width: 100%;
 
@@ -12,10 +14,9 @@ export const ModalTitle = styled.title`
 
   font-size: var(--fontsize-medium);
 
-  @media {devices.mobileL} {
+  @media ${devices.mobileL} {
     font-size: var(--fontsize-extralarge);
   }
-
 `
 
 export const ModalDescription = styled.p`
@@ -27,7 +28,7 @@ export const ModalDescription = styled.p`
   text-align: center;
   font-size: var(--fontsize-extrasmall);
 
-  @media {devices.mobileL} {
+  @media ${devices.mobileL} {
     font-size: var(--fontsize-small);
   }
 `

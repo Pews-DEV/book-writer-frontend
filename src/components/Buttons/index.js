@@ -14,7 +14,7 @@ export const BaseButton = styled.button`
   min-height: 60px;
   width: 100%;
   margin-bottom: var(--spacing);
-  
+
   transition: filter 0.2s;
 
   border-radius: 5px;
@@ -34,7 +34,7 @@ export const BaseButton = styled.button`
 export const PrimaryButton = styled(BaseButton)`
   color: var(--white);
   background-color: var(--purple-600);
-  
+
   @media ${devices.tabletM} {
     background-color: var(--purple-100);
   }

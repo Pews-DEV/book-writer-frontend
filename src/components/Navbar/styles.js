@@ -27,9 +27,9 @@ export const Menu = styled.ul`
   gap: 15px;
 
   margin-bottom: var(--spacing-3);
-  
+
   transition: filter 0.2s;
-  
+
   @media ${devices.mobileXL} {
     gap: 30px;
     flex-direction: row;
@@ -43,8 +43,8 @@ export const Menu = styled.ul`
 
 export const MenuItem = styled.li`
   transition: filter 0.2s;
-  
+
   &:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 `
