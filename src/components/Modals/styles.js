@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // We are not able to style react-modal with styled-components
-// that's why we doing like that
+// that's why we are doing like that
 // it's not recommended do the same with other styles
 export const defaultModalStyles = {
   overlay: {
