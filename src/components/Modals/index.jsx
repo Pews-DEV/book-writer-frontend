@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 
 import * as S from './styles'
 
-const customStyles = {
+const defaultStyles = {
   content: {
     position: 'absolute',
     margin: 'auto auto',
@@ -25,6 +25,14 @@ const BaseModal = (props) => {
   useEffect(() => {
     Modal.setAppElement('body')
   }, [])
+
+  const customStyles = {
+    ...defaultStyles,
+    content: {
+      ...defaultStyles.content,
+      ...props.customContent
+    }
+  }
 
   return (
     <Modal
