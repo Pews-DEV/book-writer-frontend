@@ -3,20 +3,6 @@ import Modal from 'react-modal'
 
 import * as S from './styles'
 
-const defaultStyles = {
-  content: {
-    position: 'absolute',
-    margin: 'auto auto',
-    maxWidth: '400px',
-    height: '580px',
-    padding: '0 25px',
-
-    background: '#FFFFFF',
-    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-    borderRadius: '6px'
-  }
-}
-
 const BaseModal = (props) => {
   function closeModal() {
     props.setModalIsOpen(false)
@@ -27,9 +13,9 @@ const BaseModal = (props) => {
   }, [])
 
   const customStyles = {
-    ...defaultStyles,
+    ...S.defaultModalStyles,
     content: {
-      ...defaultStyles.content,
+      ...S.defaultModalStyles.content,
       ...props.customContent
     }
   }
