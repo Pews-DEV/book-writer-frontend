@@ -1,41 +1,15 @@
-import { useEffect } from 'react'
-import Modal from 'react-modal'
-
 import { SecondaryButton } from '@/components/Buttons'
+import BaseModal from '@/components/Modals'
 
 import * as S from './styles'
 
-const customStyles = {
-  content: {
-    position: 'absolute',
-    margin: 'auto auto',
-    maxWidth: '400px',
-    height: '580px',
-    padding: '0 25px',
-
-    background: '#FFFFFF',
-    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-    borderRadius: '6px'
-  }
-}
-
 const RegisterModal = (props) => {
-  function closeModal() {
-    props.setModalIsOpen(false)
-  }
-
-  useEffect(() => {
-    Modal.setAppElement('body')
-  }, [])
-
   return (
-    <Modal
-      isOpen={props.modalIsOpen}
-      onRequestClose={closeModal}
+    <BaseModal
+      modalIsOpen={props.modalIsOpen}
+      setModalIsOpen={props.setModalIsOpen}
       contentLabel="Register Modal"
-      style={customStyles}
     >
-      <S.ModalClose onClick={closeModal}>X</S.ModalClose>
       <S.ModalTitle>Junte-se Ao Book Write</S.ModalTitle>
       <S.ModalDescription>
         Faça parte da comunidade global de leitores e escritores, todos
@@ -52,7 +26,7 @@ const RegisterModal = (props) => {
           <SecondaryButton>Inscrever-se</SecondaryButton>
         </S.ModalButtom>
       </form>
-    </Modal>
+    </BaseModal>
   )
 }
 
