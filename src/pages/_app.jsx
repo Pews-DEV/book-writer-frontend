@@ -1,12 +1,10 @@
 import GlobalStyles from '../styles/globals'
 
-function App({ Component, pageProps }) {
-  return (
-    <>
-      <GlobalStyles />
-      <Component {...pageProps} />
-    </>
-  )
-}
+const App = ({ Component, pageProps }) => (
+  <>
+    <GlobalStyles />
+    <Component {...pageProps} />
+  </>
+)
 
 export default App
