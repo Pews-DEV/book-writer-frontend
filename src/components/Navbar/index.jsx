@@ -7,7 +7,7 @@ import * as S from './styles'
 import Logo from '@/assets/img/logo.png'
 import RegisterModal from '../Modals/RegisterModal'
 
-export default function Navbar() {
+const Navbar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
   function handleOpenRegisterModal() {
@@ -32,3 +32,5 @@ export default function Navbar() {
     </S.NavContainer>
   )
 }
+
+export default Navbar

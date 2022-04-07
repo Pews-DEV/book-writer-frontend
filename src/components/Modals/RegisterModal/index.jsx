@@ -19,7 +19,7 @@ const customStyles = {
   }
 }
 
-export default function RegisterModal(props) {
+const RegisterModal = (props) => {
   function closeModal() {
     props.setModalIsOpen(false)
   }
@@ -55,3 +55,5 @@ export default function RegisterModal(props) {
     </Modal>
   )
 }
+
+export default RegisterModal

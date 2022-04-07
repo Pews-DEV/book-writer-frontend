@@ -4,17 +4,17 @@ import { MainContainer, FullyContainer } from '@/styles/Containers'
 
 import HeroBackground from '@/assets/img/hero-background.png'
 
-export default function HomeScreen() {
-  return (
-    <>
+const HomeScreen = () => (
+  <>
+    <MainContainer>
+      <Navbar />
+    </MainContainer>
+    <FullyContainer backgroundImage={HeroBackground.src}>
       <MainContainer>
-        <Navbar />
+        <Hero />
       </MainContainer>
-      <FullyContainer backgroundImage={HeroBackground.src}>
-        <MainContainer>
-          <Hero />
-        </MainContainer>
-      </FullyContainer>
-    </>
-  )
-}
+    </FullyContainer>
+  </>
+)
+
+export default HomeScreen
