@@ -10,14 +10,14 @@ export const defaultModalStyles = {
 
   content: {
     position: 'absolute',
-    margin: 'auto auto',
+    margin: 'auto',
     maxWidth: '400px',
     height: '580px',
-    padding: '0 25px',
+    padding: '0 var(--spacing-5)',
 
-    background: '#FFFFFF',
+    background: 'var(--white)',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-    borderRadius: '6px'
+    borderRadius: 'var(--spacing-2)'
   }
 }
 
