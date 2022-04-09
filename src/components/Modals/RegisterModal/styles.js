@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
+import { SecondaryButton } from '@/components/Buttons'
 import { devices } from '@/utils/devices'
+
+export const ModalBody = styled.div`
+  max-width: 320px;
+  width: 100%;
+
+  margin-inline: auto;
+`
 
 export const ModalTitle = styled.title`
   width: 100%;
@@ -36,30 +44,21 @@ export const ModalDescription = styled.p`
 export const ModalInput = styled.input`
   width: 100%;
   height: 32px;
-  left: 480px;
-  top: 256px;
 
   border: 1px solid var(--purple-100);
-  box-sizing: border-box;
   border-radius: var(--spacing-1);
 
   margin-bottom: var(--spacing-5);
+  padding-inline: var(--spacing-2);
 `
 
 export const ModalLabel = styled.label`
   font-size: var(--fontsize-medium);
 `
 
-export const ModalButtom = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const ModalButtom = styled(SecondaryButton)`
+  width: 100%;
 
-  margin-top: var(--spacing-4);
-`
-
-export const ModalClose = styled.button`
-  position: absolute;
-  top: var(--spacing-2);
-  right: var(--spacing-3);
+  margin-inline: auto;
+  margin-top: var(--spacing-2);
 `

@@ -1,58 +1,40 @@
-import { useEffect } from 'react'
-import Modal from 'react-modal'
-
-import { SecondaryButton } from '@/components/Buttons'
-
 import * as S from './styles'
 
-const customStyles = {
-  content: {
-    position: 'absolute',
-    margin: 'auto auto',
-    maxWidth: '400px',
-    height: '580px',
-    padding: '0 25px',
-
-    background: '#FFFFFF',
-    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-    borderRadius: '6px'
-  }
-}
+import BaseModal from '@/components/Modals'
 
 const RegisterModal = (props) => {
-  function closeModal() {
-    props.setModalIsOpen(false)
+  const customModalContent = {
+    height: '620px'
   }
 
-  useEffect(() => {
-    Modal.setAppElement('body')
-  }, [])
-
   return (
-    <Modal
-      isOpen={props.modalIsOpen}
-      onRequestClose={closeModal}
+    <BaseModal
+      modalIsOpen={props.modalIsOpen}
+      setModalIsOpen={props.setModalIsOpen}
       contentLabel="Register Modal"
-      style={customStyles}
+      customContent={customModalContent}
     >
-      <S.ModalClose onClick={closeModal}>X</S.ModalClose>
-      <S.ModalTitle>Junte-se Ao Book Write</S.ModalTitle>
-      <S.ModalDescription>
-        Faça parte da comunidade global de leitores e escritores, todos
-        conectados através do poder das histórias.
-      </S.ModalDescription>
-      <form>
-        <S.ModalLabel htmlFor="user">User Name</S.ModalLabel>
-        <S.ModalInput name="user" type="text" />
-        <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
-        <S.ModalInput name="email" type="text" />
-        <S.ModalLabel htmlFor="password">Password</S.ModalLabel>
-        <S.ModalInput name="password" type="text" />
-        <S.ModalButtom>
-          <SecondaryButton>Inscrever-se</SecondaryButton>
-        </S.ModalButtom>
-      </form>
-    </Modal>
+      <S.ModalBody>
+        <S.ModalTitle>Junte-se Ao Book Write</S.ModalTitle>
+        <S.ModalDescription>
+          Faça parte da comunidade global de leitores e escritores, todos
+          conectados através do poder das histórias.
+        </S.ModalDescription>
+        <form>
+          <S.ModalLabel htmlFor="username">Username</S.ModalLabel>
+          <S.ModalInput name="username" type="text" required />
+          <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
+          <S.ModalInput name="email" type="text" required />
+          <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
+          <S.ModalInput name="password" type="password" required />
+          <S.ModalLabel htmlFor="confirm_password">
+            Confirmar Senha
+          </S.ModalLabel>
+          <S.ModalInput name="confirm_password" type="password" />
+          <S.ModalButtom type="submit">Inscrever-se</S.ModalButtom>
+        </form>
+      </S.ModalBody>
+    </BaseModal>
   )
 }
 
