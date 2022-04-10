@@ -29,7 +29,7 @@ export const ModalClose = styled.button`
   right: var(--spacing-3);
 `
 
-export const ModalBody = styled.div`
+export const ModalBody = styled.section`
   max-width: 320px;
   width: 100%;
 
@@ -87,4 +87,21 @@ export const ModalButtom = styled(SecondaryButton)`
 
   margin-inline: auto;
   margin-top: var(--spacing-2);
+`
+// Login modal
+export const ModalOptions = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--spacing-5);
+`
+
+export const ModalLink = styled.a`
+  color: var(--purple-100);
+  font-size: var(--fontsize-small);
+`
+
+export const ModalText = styled.p`
+  font-size: var(--fontsize-small);
 `

@@ -1,5 +1,6 @@
 import React from 'react'
 import BaseModal from '../index'
+import * as S from '../styles'
 
 const LoginModal = (props) => {
   const customModalContent = {
@@ -13,17 +14,25 @@ const LoginModal = (props) => {
       contentLabel="Login Modal"
       customContent={customModalContent}
     >
-      <h1>
-        Divirta-se lendo e escrevendo livros, todos conectados através poder das
-        histórias.
-      </h1>
+      <S.ModalBody>
+        <S.ModalDescription>
+          Divirta-se lendo e escrevendo livros, todos conectados através poder
+          das histórias.
+        </S.ModalDescription>
 
-      <label htmlFor="email">Email / Usuário </label>
-      <input />
-      <label htmlFor="password">Senha</label>
-      <button></button>
-      <p>Esqueceu a senha?</p>
-      <p>Não tem uma conta? Cadastre-se</p>
+        <S.ModalLabel htmlFor="email">Email / Usuário </S.ModalLabel>
+        <S.ModalInput name="email" type="text" required />
+        <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
+        <S.ModalInput name="password" type="password" required />
+        <S.ModalButtom type="submit">Entrar</S.ModalButtom>
+        <S.ModalOptions>
+          {/* OBS: ADICIONAR FEATURE DE RECUPERAÇÃO DE SENHA */}
+          <S.ModalLink>Esqueceu a senha?</S.ModalLink>
+          <S.ModalText>
+            Não tem uma conta?<S.ModalLink> Cadastre-se</S.ModalLink>
+          </S.ModalText>
+        </S.ModalOptions>
+      </S.ModalBody>
     </BaseModal>
   )
 }
