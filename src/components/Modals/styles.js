@@ -94,7 +94,7 @@ export const ModalOptions = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: var(--spacing-5);
+  margin-top: var(--spacing-7);
 `
 
 export const ModalLink = styled.a`
@@ -104,4 +104,13 @@ export const ModalLink = styled.a`
 
 export const ModalText = styled.p`
   font-size: var(--fontsize-small);
+`
+
+{
+  /* OBS: Estilo do Logo temporário, até usarmos o definitivo */
+}
+export const ModalLogo = styled.img`
+  align-self: center;
+  margin-left: var(--spacing-11);
+  margin: var(--spacing-8) 0;
 `
