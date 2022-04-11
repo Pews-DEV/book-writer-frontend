@@ -32,12 +32,14 @@ const LoginModal = (props) => {
           das histórias.
         </S.ModalDescription>
 
-        <S.ModalLabel htmlFor="email">Email / Usuário </S.ModalLabel>
-        <S.ModalInput name="email" type="text" required />
-        <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
-        <S.ModalInput name="password" type="password" required />
+        <form>
+          <S.ModalLabel htmlFor="email">Email / Usuário </S.ModalLabel>
+          <S.ModalInput name="email" type="text" required />
+          <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
+          <S.ModalInput name="password" type="password" required />
 
-        <S.ModalButtom type="submit">Entrar</S.ModalButtom>
+          <S.ModalButtom type="submit">Entrar</S.ModalButtom>
+        </form>
 
         <S.ModalOptions>
           {/* OBS: ADICIONAR FEATURE DE RECUPERAÇÃO DE SENHA */}
