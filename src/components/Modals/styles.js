@@ -30,6 +30,9 @@ export const ModalClose = styled.button`
 `
 
 export const ModalBody = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 320px;
   width: 100%;
 
@@ -106,11 +109,8 @@ export const ModalText = styled.p`
   font-size: var(--fontsize-small);
 `
 
-{
-  /* OBS: Estilo do Logo temporário, até usarmos o definitivo */
-}
 export const ModalLogo = styled.img`
-  align-self: center;
-  margin-left: var(--spacing-11);
-  margin: var(--spacing-8) 0;
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-5);
+  margin-inline: auto;
 `
