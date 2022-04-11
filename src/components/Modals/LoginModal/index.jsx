@@ -7,6 +7,8 @@ import RegisterModal from '../RegisterModal'
 const LoginModal = (props) => {
   const [isOpen, setIsOpen] = useState(false)
 
+  const testId = 'input-validated'
+
   const customModalContent = {
     height: '620px'
   }
@@ -28,15 +30,25 @@ const LoginModal = (props) => {
         <S.ModalLogo src={Logo.src} alt="Logo Book Write" />
 
         <S.ModalDescription>
-          Divirta-se lendo e escrevendo livros, todos conectados através poder
-          das histórias.
+          Divirta-se lendo e escrevendo livros, todos conectados através do
+          poder das histórias.
         </S.ModalDescription>
 
         <form>
           <S.ModalLabel htmlFor="email">Email / Usuário </S.ModalLabel>
-          <S.ModalInput name="email" type="text" required />
+          <S.ModalInput
+            name="email"
+            type="text"
+            data-testid={`${testId}-email`}
+            required
+          />
           <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
-          <S.ModalInput name="password" type="password" required />
+          <S.ModalInput
+            name="password"
+            type="password"
+            data-testid={`${testId}-password`}
+            required
+          />
 
           <S.ModalButtom type="submit">Entrar</S.ModalButtom>
         </form>
