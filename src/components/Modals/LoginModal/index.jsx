@@ -15,7 +15,6 @@ const LoginModal = (props) => {
 
   const handleRegisterModal = () => {
     setIsOpen(true)
-    props.setModalIsOpen(false)
   }
 
   return (
@@ -57,11 +56,8 @@ const LoginModal = (props) => {
           {/* OBS: ADICIONAR FEATURE DE RECUPERAÇÃO DE SENHA */}
           <S.ModalLink>Esqueceu a senha?</S.ModalLink>
           <S.ModalText>
-            Não tem uma conta?
-            <S.ModalLink onClick={handleRegisterModal}>
-              {' '}
-              Cadastre-se
-            </S.ModalLink>
+            Não tem uma conta?{' '}
+            <S.ModalLink onClick={handleRegisterModal}>Cadastre-se</S.ModalLink>
             <RegisterModal modalIsOpen={isOpen} setModalIsOpen={setIsOpen} />
           </S.ModalText>
         </S.ModalOptions>
