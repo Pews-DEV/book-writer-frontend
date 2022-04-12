@@ -25,7 +25,6 @@ const LoginModal = (props) => {
       customContent={customModalContent}
     >
       <S.ModalBody>
-        {/* OBS: Imagem temporária, usei essa já que já estava sendo usada */}
         <S.ModalLogo src={Logo.src} alt="Logo Book Write" />
 
         <S.ModalDescription>
