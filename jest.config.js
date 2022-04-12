@@ -20,6 +20,15 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.js(x)?'],
+  coverageReporters: ['html', 'text', 'text-summary', 'cobertura'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.js'],
-  modulePaths: ['<rootDir>/src/']
+  modulePaths: ['<rootDir>/src/'],
+  coverageThreshold: {
+    global: {
+      branches: 70,
+      functions: 70,
+      lines: 70,
+      statements: 70
+    }
+  }
 }
