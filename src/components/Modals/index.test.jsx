@@ -14,6 +14,23 @@ describe('Testing BaseModal component', () => {
     expect(container).toBeInTheDocument()
   })
 
+  it('should render with customContent style if prop customContent is passed', () => {
+    const customModalContent = {
+      height: '620px'
+    }
+    render(
+      <BaseModal
+        modalIsOpen={true}
+        setModalIsOpen={setModalIsOpen}
+        customContent={customModalContent}
+      />
+    )
+
+    const container = screen.getByRole('dialog')
+
+    expect(container).toHaveStyle('height: 620px')
+  })
+
   it('should not render if modalIsOpen is true', () => {
     render(<BaseModal modalIsOpen={false} setModalIsOpen={setModalIsOpen} />)
 
