@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+
 import BaseModal from '../index'
 import Logo from '@/assets/img/logo.png'
-import * as S from '../styles'
 import RegisterModal from '../RegisterModal'
+
+import * as S from '../styles'
 
 const LoginModal = (props) => {
   const [isOpen, setIsOpen] = useState(false)
