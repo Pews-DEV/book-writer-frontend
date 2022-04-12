@@ -1,38 +1,40 @@
 import Navbar from '@/components/Navbar'
 import { MainContainer, FullyContainer } from '@/styles/Containers'
 
-const NewBook = () => (
-  <>
-    <MainContainer>
-      <Navbar />
-    </MainContainer>
-    <FullyContainer>
+import * as S from './styles'
+
+const NewBook = () => {
+  return (
+    <>
       <MainContainer>
-        <div>
-          <div>
-            <label>
-              <input type="file" />
-              Custom Upload
-            </label>
-          </div>
-          <div>
-            <form>
-              <label htmlFor="">Título</label>
-              <input type="text" />
-              <div>
-                <label htmlFor="">Categoria</label>
-                <input type="text" />
-                <label htmlFor="">Nome Fantasia</label>
-                <input type="text" />
-              </div>
-              <label htmlFor="">Sinopse</label>
-              <input type="text-area" />
-            </form>
-          </div>
-        </div>
+        <Navbar />
       </MainContainer>
-    </FullyContainer>
-  </>
-)
+      <FullyContainer>
+        <MainContainer>
+          <S.FormContainer>
+            <div>
+              <S.ImgLabel>Custom Upload</S.ImgLabel>
+              <S.ImgInput type="file" />
+            </div>
+            <div>
+              <form>
+                <S.Label htmlFor="">Título</S.Label>
+                <S.Input type="text" />
+                <div>
+                  <S.Label htmlFor="">Categoria</S.Label>
+                  <S.Input type="text" />
+                  <S.Label htmlFor="">Nome Fantasia</S.Label>
+                  <S.Input type="text" />
+                </div>
+                <S.Label htmlFor="">Sinopse</S.Label>
+                <S.Input type="text-area" />
+              </form>
+            </div>
+          </S.FormContainer>
+        </MainContainer>
+      </FullyContainer>
+    </>
+  )
+}
 
 export default NewBook
