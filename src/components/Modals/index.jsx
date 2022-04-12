@@ -20,10 +20,13 @@ const BaseModal = (props) => {
     }
   }
 
+  const ariaHideAppWhenTesting = process.env.NODE_ENV === 'test' && false
+
   return (
     <Modal
       isOpen={props.modalIsOpen}
       onRequestClose={closeModal}
+      ariaHideApp={ariaHideAppWhenTesting}
       contentLabel={props.contentLabel || 'Modal'}
       style={customStyles}
     >
