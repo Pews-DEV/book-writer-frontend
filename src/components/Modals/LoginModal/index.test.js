@@ -14,6 +14,8 @@ describe('Login modal testing', () => {
     ).toBeInTheDocument()
   })
 
+  it.todo('should handle "recuperar senha"')
+
   it('should render inputs correctly', () => {
     render(<LoginModal modalIsOpen={true} />)
 
