@@ -1,8 +1,8 @@
-const isProd = process.env.NODE_ENV === 'production'
-const COVERAGE_EXPECTATION = isProd ? 70 : 0
+const isCI = process.env.NODE_ENV === 'ci'
+const COVERAGE_EXPECTATION = isCI ? 70 : 0
 
 // eslint-disable-next-line no-console
-console.log('foo ', isProd)
+console.log('foo ', isCI)
 
 module.exports = {
   testEnvironment: 'jsdom',
