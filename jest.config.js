@@ -31,7 +31,7 @@ module.exports = {
       statements: COVERAGE_EXPECTATION
     }
   },
-  coverageReporters: ['text', 'text-summary', 'cobertura'],
+  coverageReporters: ['text', 'text-summary', 'cobertura', 'lcov'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.js'],
   modulePaths: ['<rootDir>/src/'],
   modulePathIgnorePatterns: ['<rootDir>/src/pages/_document.jsx']

@@ -43,10 +43,5 @@ jobs:
       - name: Run tests
         run: yarn test:ci
 
-      - name: Setup coverage reporter
-        uses: romeovs/lcov-reporter-action@v0.2.16
-        with:
-          lcov-file: ./coverage/lcov.info
-
       - name: Run build
         run: yarn build
