@@ -40,11 +40,8 @@ jobs:
       - name: Run build
         run: yarn build
 
-      - name: Set NODE_ENV variable
-        run: export NODE_ENV=production
-
       - name: Run lint
         run: yarn lint
 
       - name: Run tests
-        run: yarn test:ci
+        run: export NODE_ENV=production && yarn test:ci
