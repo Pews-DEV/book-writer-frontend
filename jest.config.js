@@ -1,9 +1,6 @@
 const isCI = process.env.NODE_ENV === 'ci'
 const COVERAGE_EXPECTATION = isCI ? 70 : 0
 
-// eslint-disable-next-line no-console
-console.log('foo ', isCI)
-
 module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: [
