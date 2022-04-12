@@ -19,7 +19,7 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint:fix",
-      "yarn test --bail --findRelatedTests --coverage"
+      "yarn test --bail --findRelatedTests"
     ]
   },
   "dependencies": {

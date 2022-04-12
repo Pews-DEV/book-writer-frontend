@@ -1,3 +1,6 @@
+const isProd = process.env.NODE_ENV === 'production'
+const COVERAGE_EXPECTATION = isProd ? 70 : 0
+
 module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: [
@@ -20,15 +23,16 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.js(x)?'],
-  coverageReporters: ['html', 'text', 'text-summary', 'cobertura'],
-  setupFilesAfterEnv: ['<rootDir>/.jest/setup.js'],
-  modulePaths: ['<rootDir>/src/'],
   coverageThreshold: {
     global: {
-      branches: 70,
-      functions: 70,
-      lines: 70,
-      statements: 70
+      branches: COVERAGE_EXPECTATION,
+      functions: COVERAGE_EXPECTATION,
+      lines: COVERAGE_EXPECTATION,
+      statements: COVERAGE_EXPECTATION
     }
-  }
+  },
+  coverageReporters: ['text', 'text-summary', 'cobertura'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setup.js'],
+  modulePaths: ['<rootDir>/src/'],
+  modulePathIgnorePatterns: ['<rootDir>/src/pages/_document.jsx']
 }
