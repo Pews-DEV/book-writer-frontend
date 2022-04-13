@@ -13,23 +13,35 @@ const NewBook = () => {
         <MainContainer>
           <S.FormContainer>
             <div>
-              <S.ImgLabel>Custom Upload</S.ImgLabel>
-              <S.ImgInput type="file" />
+              <S.ImgLabel htmlFor="img-updload">Custom Upload</S.ImgLabel>
+              <S.ImgInput name="img-upload" type="file" />
+              <S.Traco></S.Traco>
             </div>
-            <div>
-              <form>
-                <S.Label htmlFor="">Título</S.Label>
-                <S.Input type="text" />
-                <div>
-                  <S.Label htmlFor="">Categoria</S.Label>
-                  <S.Input type="text" />
-                  <S.Label htmlFor="">Nome Fantasia</S.Label>
-                  <S.Input type="text" />
-                </div>
-                <S.Label htmlFor="">Sinopse</S.Label>
-                <S.Input type="text-area" />
-              </form>
-            </div>
+            <S.Form>
+              <S.Label htmlFor="titulo">Título</S.Label>
+              <S.Input name="titulo" type="text" />
+              <S.GroupContainer>
+                <S.Group>
+                  <S.Label htmlFor="categorias">Categoria</S.Label>
+                  <S.Select name="categorias" id="categorias">
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2">Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                  </S.Select>
+                </S.Group>
+                <S.Group>
+                  <S.Label htmlFor="nome">Nome Fantasia</S.Label>
+                  <S.Input name="nome" type="text" />
+                </S.Group>
+              </S.GroupContainer>
+              <S.Label htmlFor="sinopse">Sinopse</S.Label>
+              <S.Textarea
+                name="sinopse"
+                id="sinopse"
+                cols="30"
+                rows="10"
+              ></S.Textarea>
+            </S.Form>
           </S.FormContainer>
         </MainContainer>
       </FullyContainer>
