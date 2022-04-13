@@ -4,7 +4,17 @@ import BaseModal from '../index'
 import Logo from '@/assets/img/logo.png'
 import RegisterModal from '../RegisterModal'
 
-import * as S from '../styles'
+import {
+  ModalBody,
+  ModalLogo,
+  ModalDescription,
+  ModalLabel,
+  ModalInput,
+  ModalButtom,
+  ModalOptions,
+  ModalText,
+  ModalLink
+} from '../styles'
 
 const LoginModal = (props) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,43 +36,42 @@ const LoginModal = (props) => {
       contentLabel="Login Modal"
       customContent={customModalContent}
     >
-      <S.ModalBody>
-        <S.ModalLogo src={Logo.src} alt="Logo Book Write" />
+      <ModalBody>
+        <ModalLogo src={Logo.src} alt="Logo Book Write" />
 
-        <S.ModalDescription>
+        <ModalDescription>
           Divirta-se lendo e escrevendo livros, todos conectados através do
           poder das histórias.
-        </S.ModalDescription>
+        </ModalDescription>
 
         <form>
-          <S.ModalLabel htmlFor="email">Email / Usuário </S.ModalLabel>
-          <S.ModalInput
+          <ModalLabel htmlFor="email">Email / Usuário </ModalLabel>
+          <ModalInput
             name="email"
             type="text"
             data-testid={`${testId}-email`}
             required
           />
-          <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
-          <S.ModalInput
+          <ModalLabel htmlFor="password">Senha</ModalLabel>
+          <ModalInput
             name="password"
             type="password"
             data-testid={`${testId}-password`}
             required
           />
 
-          <S.ModalButtom type="submit">Entrar</S.ModalButtom>
+          <ModalButtom type="submit">Entrar</ModalButtom>
         </form>
 
-        <S.ModalOptions>
-          {/* OBS: ADICIONAR FEATURE DE RECUPERAÇÃO DE SENHA */}
-          <S.ModalLink>Esqueceu a senha?</S.ModalLink>
-          <S.ModalText>
+        <ModalOptions>
+          <ModalLink>Esqueceu a senha?</ModalLink>
+          <ModalText>
             Não tem uma conta?{' '}
-            <S.ModalLink onClick={handleRegisterModal}>Cadastre-se</S.ModalLink>
+            <ModalLink onClick={handleRegisterModal}>Cadastre-se</ModalLink>
             <RegisterModal modalIsOpen={isOpen} setModalIsOpen={setIsOpen} />
-          </S.ModalText>
-        </S.ModalOptions>
-      </S.ModalBody>
+          </ModalText>
+        </ModalOptions>
+      </ModalBody>
     </BaseModal>
   )
 }
