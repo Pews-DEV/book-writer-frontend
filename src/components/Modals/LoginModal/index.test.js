@@ -43,4 +43,12 @@ describe('Login modal testing', () => {
     const registerModalAfterClick = screen.getByTestId('register-modal')
     expect(registerModalAfterClick).toBeInTheDocument()
   })
+
+  it('should not correctly modal render', () => {
+    render(<LoginModal modalIsOpen={false} />)
+
+    const registerModalBeforeClick = screen.queryByTestId('register-modal')
+
+    expect(registerModalBeforeClick).not.toBeInTheDocument()
+  })
 })
