@@ -7,11 +7,11 @@ describe('Login modal testing', () => {
   it('should render the component', () => {
     render(<LoginModal modalIsOpen={true} setModalIsOpen={setIsOpen} />)
 
-    expect(
-      screen.getByText(
-        'Divirta-se lendo e escrevendo livros, todos conectados através do poder das histórias.'
-      )
-    ).toBeInTheDocument()
+    const modalDescription = screen.getByText(
+      'Divirta-se lendo e escrevendo livros, todos conectados através do poder das histórias.'
+    )
+
+    expect(modalDescription).toBeInTheDocument()
   })
 
   it.todo('should handle "recuperar senha"')
