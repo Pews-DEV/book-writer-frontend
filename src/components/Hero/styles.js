@@ -41,7 +41,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.sub`
   font-size: var(--fontsize-large);
   font-weight: var(--fw-regular);
-  line-height: 28px;
+  line-height: var(--lineheight--1);
   text-align: left;
 
   margin-bottom: var(--spacing-5);
@@ -50,7 +50,7 @@ export const Description = styled.p`
   font-size: var(--fontsize-large);
   font-weight: var(--fw-regular);
   color: var(--purple-700);
-  line-height: 28px;
+  line-height: var(--lineheight--1);
   text-align: left;
 
   margin-bottom: var(--spacing-6);

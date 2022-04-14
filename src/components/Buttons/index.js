@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const BaseButton = styled.button`
   font-size: var(--fontsize-large);
   font-weight: var(--fw-regular);
-  line-height: 28px;
+  line-height: var(--lineheight--1);
   text-align: left;
 
   display: flex;
