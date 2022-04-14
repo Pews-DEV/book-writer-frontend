@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 export const FormContainer = styled.div`
-  height: 400px;
   width: 1160px;
   display: flex;
-  gap: 30px;
-  margin-top: 50px;
+  gap: 58px;
+  margin-top: 95px;
 `
 
 export const Form = styled.form`
@@ -15,13 +14,19 @@ export const Form = styled.form`
 `
 export const GroupContainer = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 42px;
 `
 
-export const Group = styled.div`
+export const GroupSelect = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 334px;
+`
+
+export const GroupInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 498px;
 `
 
 export const ImgLabel = styled.label`
@@ -44,25 +49,29 @@ export const ImgInput = styled.input`
 
 export const Label = styled.label`
   font-size: 18px;
+  margin-bottom: 12px;
 `
 
 export const Input = styled.input`
-  height: 30px;
-  margin-bottom: 20px;
+  height: 45px;
+  margin-bottom: 24px;
+  padding: 11px 17px;
   border: 1px solid var(--gray-blue-200);
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 `
 
 export const Textarea = styled.textarea`
-  margin-bottom: 20px;
+  height: 143px;
+  padding: 11px 17px;
   border: 1px solid var(--gray-blue-200);
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 `
 
 export const Select = styled.select`
-  height: 30px;
+  height: 45px;
+  padding: 11px 17px;
   border: 1px solid var(--gray-blue-200);
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -71,7 +80,7 @@ export const Select = styled.select`
 export const Traco = styled.div`
   content: '';
   background-color: var(--purple-100);
-  width: 150px;
+  width: 143px;
   height: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
 `

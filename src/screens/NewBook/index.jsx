@@ -19,27 +19,37 @@ const NewBook = () => {
             </div>
             <S.Form>
               <S.Label htmlFor="titulo">Título</S.Label>
-              <S.Input name="titulo" type="text" />
+              <S.Input
+                name="titulo"
+                type="text"
+                placeholder="Digite o titulo do livro..."
+              />
               <S.GroupContainer>
-                <S.Group>
+                <S.GroupSelect>
                   <S.Label htmlFor="categorias">Categoria</S.Label>
                   <S.Select name="categorias" id="categorias">
+                    <option value="" disabled selected>
+                      Categoria do livro...
+                    </option>
                     <option value="valor1">Valor 1</option>
                     <option value="valor2">Valor 2</option>
-                    <option value="valor3">Valor 3</option>
                   </S.Select>
-                </S.Group>
-                <S.Group>
+                </S.GroupSelect>
+                <S.GroupInput>
                   <S.Label htmlFor="nome">Nome Fantasia</S.Label>
-                  <S.Input name="nome" type="text" />
-                </S.Group>
+                  <S.Input
+                    name="nome"
+                    type="text"
+                    placeholder="Digite o nome fantasia..."
+                  />
+                </S.GroupInput>
               </S.GroupContainer>
               <S.Label htmlFor="sinopse">Sinopse</S.Label>
               <S.Textarea
                 name="sinopse"
                 id="sinopse"
-                cols="30"
                 rows="10"
+                placeholder="Digite a sinopse do livro......"
               ></S.Textarea>
             </S.Form>
           </S.FormContainer>
