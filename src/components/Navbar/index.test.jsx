@@ -26,6 +26,19 @@ describe('Testing Navbar component', () => {
     expect(iniciarSessaoMenuItem).toBeInTheDocument()
   })
 
+  it('should click in menu "Iniciar Sessão" and open login modal', () => {
+    render(<Navbar />)
+
+    const registerModalBeforeClick = screen.queryByTestId('login-modal')
+    expect(registerModalBeforeClick).not.toBeInTheDocument()
+
+    const inscrevaSeMenuItem = screen.getByText('Iniciar Sessão')
+    fireEvent.click(inscrevaSeMenuItem)
+
+    const registerModalAfterClick = screen.queryByTestId('login-modal')
+    expect(registerModalAfterClick).toBeInTheDocument()
+  })
+
   it('should menu "Inscreva-se" render correctly', () => {
     render(<Navbar />)
 

@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from '../styles'
 
 import BaseModal from '@/components/Modals'
 
