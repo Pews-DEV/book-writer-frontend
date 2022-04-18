@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const FormContainer = styled.div`
   width: 1160px;
   display: flex;
-  gap: 58px;
-  margin-top: 95px;
+  gap: var(--spacing-9);
+  margin-top: var(--spacing-14);
 `
 
 export const Form = styled.form`
@@ -12,9 +12,10 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
 `
+
 export const GroupContainer = styled.div`
   display: flex;
-  gap: 42px;
+  gap: var(--spacing-7);
 `
 
 export const GroupSelect = styled.div`
@@ -39,7 +40,7 @@ export const ImgLabel = styled.label`
 
   cursor: pointer;
 
-  border-radius: 5px;
+  border-radius: var(--spacing-1);
   background-color: var(--gray-200);
 `
 
@@ -48,33 +49,33 @@ export const ImgInput = styled.input`
 `
 
 export const Label = styled.label`
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: var(--fontsize-medium);
+  margin-bottom: var(--spacing-3);
 `
 
 export const Input = styled.input`
   height: 45px;
-  margin-bottom: 24px;
-  padding: 11px 17px;
+  margin-bottom: var(--spacing-5);
+  padding: var(--spacing-3) var(--spacing-4);
   border: 1px solid var(--gray-blue-200);
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: var(--spacing-1);
+  box-shadow: 1px 1px 4px var(--gray-200);
 `
 
 export const Textarea = styled.textarea`
   height: 143px;
-  padding: 11px 17px;
+  padding: var(--spacing-3) var(--spacing-4);
   border: 1px solid var(--gray-blue-200);
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: var(--spacing-1);
+  box-shadow: 1px 1px 4px var(--gray-200);
 `
 
 export const Select = styled.select`
   height: 45px;
-  padding: 11px 17px;
+  padding: var(--spacing-3) var(--spacing-4);
   border: 1px solid var(--gray-blue-200);
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: var(--spacing-1);
+  box-shadow: 1px 1px 4px var(--gray-200);
 `
 
 export const Traco = styled.div`
@@ -82,5 +83,5 @@ export const Traco = styled.div`
   background-color: var(--purple-100);
   width: 143px;
   height: 10px;
-  margin-top: 40px;
+  margin-top: var(--spacing-7);
 `
