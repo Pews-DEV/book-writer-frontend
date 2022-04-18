@@ -1,6 +1,9 @@
 import Navbar from '@/components/Navbar'
 import { MainContainer, FullyContainer } from '@/styles/Containers'
 
+import Image from 'next/image'
+import ImgCapa from '@/assets/img/img-capa.png'
+
 import * as S from './styles'
 
 const NewBook = () => {
@@ -13,7 +16,9 @@ const NewBook = () => {
         <MainContainer>
           <S.FormContainer>
             <div>
-              <S.ImgLabel htmlFor="img-updload">Custom Upload</S.ImgLabel>
+              <S.ImgLabel htmlFor="img-updload">
+                <Image src={ImgCapa.src} alt="Imagem Capa" />
+              </S.ImgLabel>
               <S.ImgInput name="img-upload" type="file" />
               <S.Traco></S.Traco>
             </div>
