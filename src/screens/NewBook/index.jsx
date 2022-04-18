@@ -1,9 +1,9 @@
-import Navbar from '@/components/Navbar'
-import { MainContainer, FullyContainer } from '@/styles/Containers'
-
 import Image from 'next/image'
-import ImgCapa from '@/assets/img/img-capa.png'
 
+import { MainContainer, FullyContainer } from '@/styles/Containers'
+import Navbar from '@/components/Navbar'
+
+import ImgCapa from '@/assets/img/img-capa.png'
 import * as S from './styles'
 
 const NewBook = () => {
