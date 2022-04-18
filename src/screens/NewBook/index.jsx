@@ -17,7 +17,12 @@ const NewBook = () => {
           <S.FormContainer>
             <div>
               <S.ImgLabel htmlFor="img-updload">
-                <Image src={ImgCapa.src} alt="Imagem Capa" />
+                <Image
+                  src={ImgCapa.src}
+                  alt="Imagem Capa"
+                  width="64px"
+                  height="64px"
+                />
               </S.ImgLabel>
               <S.ImgInput name="img-upload" type="file" />
               <S.Traco></S.Traco>
