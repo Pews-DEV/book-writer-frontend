@@ -12,7 +12,6 @@ const BaseModal = (props) => {
     Modal.setAppElement('body')
   }, [])
 
-  const isTesting = process.env.NODE_ENV === 'test'
   const customStyles = {
     ...S.defaultModalStyles,
     content: {
@@ -25,7 +24,7 @@ const BaseModal = (props) => {
     <Modal
       isOpen={props.modalIsOpen}
       onRequestClose={closeModal}
-      ariaHideApp={!isTesting}
+      ariaHideApp={false}
       contentLabel={props.contentLabel || 'Modal'}
       style={customStyles}
     >
