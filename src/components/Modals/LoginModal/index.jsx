@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import BaseModal from '../index'
 import Logo from '@/assets/img/logo.png'
+import Input from '@/components/Inputs/index'
 import RegisterModal from '../RegisterModal'
 
 import {
@@ -9,7 +10,6 @@ import {
   ModalLogo,
   ModalDescription,
   ModalLabel,
-  ModalInput,
   ModalButtom,
   ModalOptions,
   ModalText,
@@ -18,8 +18,6 @@ import {
 
 const LoginModal = (props) => {
   const [isOpen, setIsOpen] = useState(false)
-
-  const testId = 'input-validated'
 
   const customModalContent = {
     height: '620px'
@@ -46,19 +44,9 @@ const LoginModal = (props) => {
 
         <form>
           <ModalLabel htmlFor="email">Email / Usuário </ModalLabel>
-          <ModalInput
-            name="email"
-            type="text"
-            data-testid={`${testId}-email`}
-            required
-          />
+          <Input name="email" type="text" />
           <ModalLabel htmlFor="password">Senha</ModalLabel>
-          <ModalInput
-            name="password"
-            type="password"
-            data-testid={`${testId}-password`}
-            required
-          />
+          <Input name="password" type="password" />
 
           <ModalButtom type="submit">Entrar</ModalButtom>
         </form>

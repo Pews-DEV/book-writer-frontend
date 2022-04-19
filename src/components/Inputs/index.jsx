@@ -3,15 +3,15 @@ import * as S from './styles'
 import Eye from '@/assets/img/eye.png'
 import CloseEye from '@/assets/img/close-eye(TEMPORARY).png'
 
-const Input = ({ name, type }) => {
+const Input = (props) => {
+  const { name, type, showButton = false } = props
   const [typeInput, setTypeInput] = useState(type)
-
   const validatePassword = typeInput === 'password'
 
   return (
-    <S.Wrapper>
+    <S.Wrapper data-testid={`input-validated-${name}`}>
       <S.Input name={name} type={typeInput} required />
-      {validatePassword && (
+      {showButton && (
         <S.Image
           src={validatePassword ? Eye.src : CloseEye.src}
           alt="Mostrar senha"
