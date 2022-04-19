@@ -27,11 +27,11 @@ const RegisterModal = (props) => {
           <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
           <Input name="email" type="text" />
           <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
-          <Input name="password" type="password" />
+          <Input name="password" type="password" showButton={true} />
           <S.ModalLabel htmlFor="confirm_password">
             Confirmar Senha
           </S.ModalLabel>
-          <Input name="confirm_password" type="password" />
+          <Input name="confirm_password" type="password" showButton={true} />
           <S.ModalButtom type="submit">Inscrever-se</S.ModalButtom>
         </form>
       </S.ModalBody>
