@@ -25,10 +25,9 @@ const BaseModal = (props) => {
     <Modal
       isOpen={props.modalIsOpen}
       onRequestClose={closeModal}
-      ariaHideApp={false}
+      ariaHideApp={!isTesting}
       contentLabel={props.contentLabel || 'Modal'}
       style={customStyles}
-      ariaHideApp={!isTesting}
     >
       <S.ModalClose onClick={closeModal}>X</S.ModalClose>
       {props.children}
