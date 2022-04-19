@@ -46,7 +46,7 @@ const LoginModal = (props) => {
           <ModalLabel htmlFor="email">Email / Usuário </ModalLabel>
           <Input name="email" type="text" />
           <ModalLabel htmlFor="password">Senha</ModalLabel>
-          <Input name="password" type="password" />
+          <Input name="password" type="password" showButton />
 
           <ModalButtom type="submit">Entrar</ModalButtom>
         </form>
