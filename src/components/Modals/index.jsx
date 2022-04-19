@@ -25,6 +25,7 @@ const BaseModal = (props) => {
     <Modal
       isOpen={props.modalIsOpen}
       onRequestClose={closeModal}
+      ariaHideApp={false}
       contentLabel={props.contentLabel || 'Modal'}
       style={customStyles}
       ariaHideApp={!isTesting}

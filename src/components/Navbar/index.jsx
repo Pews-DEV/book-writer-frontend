@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <S.NavContainer>
+    <S.NavContainer data-testid="container">
       <div>
         <Image src={Logo.src} alt="logo" height="44px" />
       </div>
@@ -33,8 +33,13 @@ const Navbar = () => {
             modalIsOpen={modalLoginIsOpen}
           />
         </S.MenuItem>
-        <S.MenuItem>
-          <button onClick={handleOpenRegisterModal}> Inscreva-se </button>
+        <S.MenuItem data-testid="inscreva-se">
+          <button
+            onClick={handleOpenRegisterModal}
+            data-testid="inscreva-se__open-modal"
+          >
+            Inscreva-se
+          </button>
           <RegisterModal
             setModalIsOpen={setModalIsOpen}
             modalIsOpen={modalIsOpen}

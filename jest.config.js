@@ -1,3 +1,6 @@
+const isCI = process.env.NODE_ENV === 'ci'
+const COVERAGE_EXPECTATION = isCI ? 70 : 0
+
 module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: [
@@ -20,6 +23,16 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.js(x)?'],
+  coverageThreshold: {
+    global: {
+      branches: COVERAGE_EXPECTATION,
+      functions: COVERAGE_EXPECTATION,
+      lines: COVERAGE_EXPECTATION,
+      statements: COVERAGE_EXPECTATION
+    }
+  },
+  coverageReporters: ['text', 'text-summary', 'cobertura', 'lcov'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.js'],
-  modulePaths: ['<rootDir>/src/']
+  modulePaths: ['<rootDir>/src/'],
+  modulePathIgnorePatterns: ['<rootDir>/src/pages/_document.jsx']
 }

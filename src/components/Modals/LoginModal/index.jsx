@@ -34,7 +34,7 @@ const LoginModal = (props) => {
       contentLabel="Login Modal"
       customContent={customModalContent}
     >
-      <ModalBody>
+      <ModalBody data-testid="login-modal">
         <ModalLogo src={Logo.src} alt="Logo Book Write" />
 
         <ModalDescription>
