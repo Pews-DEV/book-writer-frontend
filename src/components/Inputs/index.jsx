@@ -10,7 +10,12 @@ const Input = (props) => {
 
   return (
     <S.Wrapper data-testid={`input-validated-${name}`}>
-      <S.Input name={name} type={typeInput} required />
+      <S.Input
+        name={name}
+        type={typeInput}
+        required
+        data-testid={`input-validated-test`}
+      />
       {showButton && (
         <S.Image
           src={validatePassword ? Eye.src : CloseEye.src}
@@ -18,6 +23,7 @@ const Input = (props) => {
           onClick={() =>
             validatePassword ? setTypeInput('text') : setTypeInput('password')
           }
+          data-testid={'button-validated'}
         />
       )}
     </S.Wrapper>
