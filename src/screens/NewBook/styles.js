@@ -78,7 +78,7 @@ export const Select = styled.select`
   box-shadow: 1px 1px 4px var(--gray-200);
 `
 
-export const Traco = styled.div`
+export const PurpleBar = styled.hr`
   content: '';
   background-color: var(--purple-100);
   width: 143px;

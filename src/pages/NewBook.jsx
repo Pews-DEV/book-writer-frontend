@@ -1,5 +1,5 @@
-import Book from '@/screens/NewBook'
+import NewBookScreen from '@/screens/NewBook'
 
-const NewBook = () => <Book />
+const NewBook = () => <NewBookScreen />
 
 export default NewBook
