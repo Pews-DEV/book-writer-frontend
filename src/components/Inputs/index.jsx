@@ -4,6 +4,7 @@ import * as S from './styles'
 
 import Eye from '@/assets/img/eye.png'
 import CloseEye from '@/assets/img/close-eye.png'
+import InputsProps from './proptypes'
 
 const Input = (props) => {
   const { name, type, showButton = false } = props
@@ -31,5 +32,7 @@ const Input = (props) => {
     </S.Wrapper>
   )
 }
+
+Input.prototype = InputsProps
 
 export default Input
