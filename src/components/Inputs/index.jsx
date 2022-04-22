@@ -3,7 +3,7 @@ import { useState } from 'react'
 import * as S from './styles'
 
 import Eye from '@/assets/img/eye.png'
-import CloseEye from '@/assets/img/close-eye(TEMPORARY).png'
+import CloseEye from '@/assets/img/close-eye.png'
 
 const Input = (props) => {
   const { name, type, showButton = false } = props
