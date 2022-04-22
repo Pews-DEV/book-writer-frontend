@@ -7,14 +7,14 @@ import CloseEye from '@/assets/img/close-eye(TEMPORARY).png'
 
 const Input = (props) => {
   const { name, type, showButton = false } = props
-  const [typeInput, setTypeInput] = useState(type)
-  const validatePassword = typeInput === 'password'
+  const [inputType, setInputType] = useState(type)
+  const validatePassword = inputType === 'password'
 
   return (
     <S.Wrapper data-testid={`input-validated-${name}`}>
       <S.Input
         name={name}
-        type={typeInput}
+        type={inputType}
         required
         data-testid={`input-validated-test`}
       />
@@ -23,7 +23,7 @@ const Input = (props) => {
           src={validatePassword ? Eye.src : CloseEye.src}
           alt="Mostrar senha"
           onClick={() =>
-            validatePassword ? setTypeInput('text') : setTypeInput('password')
+            validatePassword ? setInputType('text') : setInputType('password')
           }
           data-testid={'button-validated'}
         />
