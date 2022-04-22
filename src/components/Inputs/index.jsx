@@ -25,7 +25,7 @@ const Input = (props) => {
           onClick={() =>
             validatePassword ? setInputType('text') : setInputType('password')
           }
-          data-testid={'button-validated'}
+          data-testid={'show-password-button'}
         />
       )}
     </S.Wrapper>
