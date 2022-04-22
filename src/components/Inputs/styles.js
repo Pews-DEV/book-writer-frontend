@@ -9,7 +9,7 @@ export const Input = styled.input`
   height: 32px;
 
   border: 1px solid var(--purple-100);
-  border-radius: var(--spacing-1);
+  border-radius: 4px;
 
   margin-bottom: var(--spacing-5);
   padding-inline: var(--spacing-2);
@@ -17,11 +17,11 @@ export const Input = styled.input`
 `
 
 export const Image = styled.img`
-  width: var(--spacing-5);
+  width: 24px;
 
   cursor: pointer;
 
   position: absolute;
-  top: var(--spacing-1);
-  right: var(--spacing-4);
+  top: 4px;
+  right: 16px;
 `
