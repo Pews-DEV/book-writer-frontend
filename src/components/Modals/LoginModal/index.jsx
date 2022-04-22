@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 import BaseModal from '../index'
+import RegisterModal from '../RegisterModal'
 import Logo from '@/assets/img/logo.png'
 import Input from '@/components/Inputs/index'
-import RegisterModal from '../RegisterModal'
 
 import {
   ModalBody,
