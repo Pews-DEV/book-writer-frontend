@@ -1,7 +1,8 @@
-import * as S from '../styles'
-
+import RegisterModalProps from './proptypes'
 import BaseModal from '@/components/Modals'
 import Input from '@/components/Inputs/index'
+
+import * as S from '../styles'
 
 const RegisterModal = (props) => {
   const customModalContent = {
@@ -38,5 +39,7 @@ const RegisterModal = (props) => {
     </BaseModal>
   )
 }
+
+RegisterModal.prototype = RegisterModalProps
 
 export default RegisterModal

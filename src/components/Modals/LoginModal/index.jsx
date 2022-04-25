@@ -1,7 +1,9 @@
 import { useState } from 'react'
 
+import LoginModalProps from './proptypes'
 import BaseModal from '../index'
 import RegisterModal from '../RegisterModal'
+
 import Logo from '@/assets/img/logo.png'
 import Input from '@/components/Inputs/index'
 
@@ -63,5 +65,7 @@ const LoginModal = (props) => {
     </BaseModal>
   )
 }
+
+LoginModal.proptype = LoginModalProps
 
 export default LoginModal
