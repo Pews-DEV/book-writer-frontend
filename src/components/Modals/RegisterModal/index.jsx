@@ -1,5 +1,6 @@
-import BaseModal from '@/components/Modals'
 import RegisterModalProps from './proptypes'
+import BaseModal from '@/components/Modals'
+import Input from '@/components/Inputs/index'
 
 import * as S from '../styles'
 
@@ -23,15 +24,15 @@ const RegisterModal = (props) => {
         </S.ModalDescription>
         <form>
           <S.ModalLabel htmlFor="username">Username</S.ModalLabel>
-          <S.ModalInput name="username" type="text" required />
+          <Input name="username" type="text" />
           <S.ModalLabel htmlFor="email">E-mail</S.ModalLabel>
-          <S.ModalInput name="email" type="text" required />
+          <Input name="email" type="text" />
           <S.ModalLabel htmlFor="password">Senha</S.ModalLabel>
-          <S.ModalInput name="password" type="password" required />
+          <Input name="password" type="password" showButton />
           <S.ModalLabel htmlFor="confirm_password">
             Confirmar Senha
           </S.ModalLabel>
-          <S.ModalInput name="confirm_password" type="password" />
+          <Input name="confirm_password" type="password" showButton />
           <S.ModalButtom type="submit">Inscrever-se</S.ModalButtom>
         </form>
       </S.ModalBody>

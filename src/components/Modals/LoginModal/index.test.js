@@ -17,7 +17,7 @@ describe('Login modal testing', () => {
   it.todo('should handle "recuperar senha"')
 
   it('should render input email correctly', () => {
-    render(<LoginModal modalIsOpen={true} />)
+    render(<LoginModal modalIsOpen={true} setModalIsOpen={setIsOpen} />)
 
     const inputEmail = screen.getByTestId('input-validated-email')
 
@@ -25,7 +25,7 @@ describe('Login modal testing', () => {
   })
 
   it('should render input password correctly', () => {
-    render(<LoginModal modalIsOpen={true} />)
+    render(<LoginModal modalIsOpen={true} setModalIsOpen={setIsOpen} />)
 
     const inputPassword = screen.getByTestId('input-validated-password')
 

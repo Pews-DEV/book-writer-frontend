@@ -70,17 +70,6 @@ export const ModalDescription = styled.p`
   }
 `
 
-export const ModalInput = styled.input`
-  width: 100%;
-  height: 32px;
-
-  border: 1px solid var(--purple-100);
-  border-radius: var(--spacing-1);
-
-  margin-bottom: var(--spacing-5);
-  padding-inline: var(--spacing-2);
-`
-
 export const ModalLabel = styled.label`
   font-size: var(--fontsize-medium);
 `
