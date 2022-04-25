@@ -8,8 +8,4 @@ describe('<Home />', () => {
 
     expect(container).toBeInTheDocument()
   })
-
-  it('test if two plus two equals a four', () => {
-    expect(2 + 2).toBe(4)
-  })
 })

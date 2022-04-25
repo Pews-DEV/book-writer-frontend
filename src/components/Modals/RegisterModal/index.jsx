@@ -1,6 +1,7 @@
-import * as S from './styles'
-
 import BaseModal from '@/components/Modals'
+import RegisterModalProps from './proptypes'
+
+import * as S from '../styles'
 
 const RegisterModal = (props) => {
   const customModalContent = {
@@ -14,7 +15,7 @@ const RegisterModal = (props) => {
       contentLabel="Register Modal"
       customContent={customModalContent}
     >
-      <S.ModalBody>
+      <S.ModalBody data-testid="register-modal">
         <S.ModalTitle>Junte-se Ao Book Write</S.ModalTitle>
         <S.ModalDescription>
           Faça parte da comunidade global de leitores e escritores, todos
@@ -37,5 +38,7 @@ const RegisterModal = (props) => {
     </BaseModal>
   )
 }
+
+RegisterModal.prototype = RegisterModalProps
 
 export default RegisterModal

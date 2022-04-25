@@ -1,7 +1,9 @@
-import { devices } from '@/utils/devices'
 import styled from 'styled-components'
 
-export const MainContainer = styled.main`
+import { devices } from '@/utils/devices'
+import ContainerProps from './PropTypes/Containers.Proptypes'
+
+export const MainContainer = styled.section`
   width: 100%;
 
   max-width: 1280px;
@@ -9,7 +11,7 @@ export const MainContainer = styled.main`
   margin: 0 auto;
 `
 
-export const FullyContainer = styled.main`
+export const FullyContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +20,7 @@ export const FullyContainer = styled.main`
   min-height: calc(100vh - 70px);
 
   ${(props) =>
-    props.backgroundImage
-      ? `background-image: url(${props.backgroundImage});`
-      : ''}
+    props.backgroundImage && `background-image: url(${props.backgroundImage});`}
 
   background-repeat: no-repeat;
   background-position: right top;
@@ -29,3 +29,5 @@ export const FullyContainer = styled.main`
     display: block;
   }
 `
+
+FullyContainer.propTypes = ContainerProps

@@ -73,6 +73,8 @@ const GlobalStyles = createGlobalStyle`
     --fontsize-extrasmall: 13px;
     --fontsize-label: 12px;
 
+    --lineheight--1: 28px;
+
     --fw-light: 300;
     --fw-regular: 400;
     --fw-semibold: 500;

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Modal from 'react-modal'
 
+import BaseModalProps from './proptypes'
 import * as S from './styles'
 
 const BaseModal = (props) => {
@@ -24,6 +25,7 @@ const BaseModal = (props) => {
     <Modal
       isOpen={props.modalIsOpen}
       onRequestClose={closeModal}
+      ariaHideApp={false}
       contentLabel={props.contentLabel || 'Modal'}
       style={customStyles}
     >
@@ -32,5 +34,7 @@ const BaseModal = (props) => {
     </Modal>
   )
 }
+
+BaseModal.prototype = BaseModalProps
 
 export default BaseModal
