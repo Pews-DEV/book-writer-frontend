@@ -1,5 +1,7 @@
-import { devices } from '@/utils/devices'
 import styled from 'styled-components'
+
+import { devices } from '@/utils/devices'
+import ContainerProps from './PropTypes/Containers.Proptypes'
 
 export const MainContainer = styled.section`
   width: 100%;
@@ -27,3 +29,5 @@ export const FullyContainer = styled.section`
     display: block;
   }
 `
+
+FullyContainer.propTypes = ContainerProps
