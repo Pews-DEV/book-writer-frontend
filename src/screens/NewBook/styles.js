@@ -30,24 +30,6 @@ export const GroupInput = styled.div`
   width: 498px;
 `
 
-export const ImgLabel = styled.label`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 228px;
-  height: 350px;
-
-  cursor: pointer;
-
-  border-radius: var(--spacing-1);
-  background-color: var(--gray-200);
-`
-
-export const ImgInput = styled.input`
-  display: none;
-`
-
 export const Label = styled.label`
   font-size: var(--fontsize-medium);
   margin-bottom: var(--spacing-3);
@@ -76,12 +58,4 @@ export const Select = styled.select`
   border: 1px solid var(--gray-blue-200);
   border-radius: var(--spacing-1);
   box-shadow: 1px 1px 4px var(--gray-200);
-`
-
-export const PurpleBar = styled.hr`
-  content: '';
-  background-color: var(--purple-100);
-  width: 143px;
-  height: 10px;
-  margin-top: var(--spacing-7);
 `
