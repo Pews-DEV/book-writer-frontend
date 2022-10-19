@@ -1,44 +1,51 @@
 [
-    {
-        "img_url": "/tmp/assets/capa-will.png",
-        "title": "Will",
-        "author": "Will Smith",
-        "is_liked": false
-    },    
-    {
-        "img_url": "/tmp/assets/capa-vivendo-como-guerreiro.png",
-        "title": "Vivendo como um guerreiro",
-        "author": "Whinderson Nunes",
-        "is_liked": false
-    },    
-    {
-        "img_url": "/tmp/assets/capa-domain-driven-design.png",
-        "title": "Domain-Driven Design",
-        "author": "Eric Evans",
-        "is_liked": true
-    },    
-    {
-        "img_url": "/tmp/assets/capa-arquitetura-limpa.png",
-        "title": "Arquitetura Limpa",
-        "author": "Robert Martin",
-        "is_liked": false
-    },    
-    {
-        "img_url": "/tmp/assets/capa-arte-da-guerra.png",
-        "title": "A Arte da Guerra",
-        "author": "Sun Tzu",
-        "is_liked": true
-    },
-    {
-        "img_url": "/tmp/assets/capa-vivendo-como-guerreiro.png",
-        "title": "Vivendo como um guerreiro",
-        "author": "Whinderson Nunes",
-        "is_liked": false
-    },
-    {
-        "img_url": "/tmp/assets/capa-arquitetura-limpa.png",
-        "title": "Arquitetura Limpa",
-        "author": "Robert Martin",
-        "is_liked": false
-    }
+  {
+    "img_url": "/tmp/assets/capa-will.png",
+    "title": "Will",
+    "author": "Will Smith",
+    "categoria": ["biografia"],
+    "is_liked": false
+  },
+  {
+    "img_url": "/tmp/assets/capa-vivendo-como-guerreiro.png",
+    "title": "Vivendo como um guerreiro",
+    "author": "Whinderson Nunes",
+    "categoria": ["biografia"],
+    "is_liked": false
+  },
+  {
+    "img_url": "/tmp/assets/capa-domain-driven-design.png",
+    "title": "Domain-Driven Design",
+    "author": "Eric Evans",
+    "categoria": ["tecnico-e-profissional", "informatica"],
+    "is_liked": true
+  },
+  {
+    "img_url": "/tmp/assets/capa-arquitetura-limpa.png",
+    "title": "Arquitetura Limpa",
+    "author": "Robert Martin",
+    "categoria": ["tecnico-e-profissional", "informatica"],
+    "is_liked": false
+  },
+  {
+    "img_url": "/tmp/assets/capa-arte-da-guerra.png",
+    "title": "A Arte da Guerra",
+    "author": "Sun Tzu",
+    "categoria": ["comportamento", "critica-literaria"],
+    "is_liked": true
+  },
+  {
+    "img_url": "/tmp/assets/capa-vivendo-como-guerreiro.png",
+    "title": "Vivendo como um guerreiro",
+    "author": "Whinderson Nunes",
+    "categoria": ["biografia"],
+    "is_liked": false
+  },
+  {
+    "img_url": "/tmp/assets/capa-arquitetura-limpa.png",
+    "title": "Arquitetura Limpa",
+    "author": "Robert Martin",
+    "categoria": ["tecnico-e-profissional", "informatica"],
+    "is_liked": false
+  }
 ]
