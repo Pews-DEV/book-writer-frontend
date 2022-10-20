@@ -33,6 +33,6 @@ const Input = (props) => {
   )
 }
 
-Input.prototype = InputsProps
+Input.propTypes = InputsProps
 
 export default Input
