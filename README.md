@@ -28,3 +28,4 @@ Ainda em estágio de desenvolvimento, a Book Writer é uma rede social OpenSourc
 - [Eslint](https://eslint.org/)
 - [Git](https://git-scm.com/doc)
 - [Github Actions](https://docs.github.com/pt/actions)
+
