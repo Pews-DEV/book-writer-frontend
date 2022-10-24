@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
     --red-100: #FFF7F7;
     --red-200: #FFEBEC;
     --red-400: #EA6363;
+    --red-700: #721C24;
     --yellow-100: #FFF9EB;
     --yellow-200: #FDECBA;
     --yellow-300: #FDE086;
@@ -72,6 +73,8 @@ const GlobalStyles = createGlobalStyle`
     --fontsize-small: 14px;
     --fontsize-extrasmall: 13px;
     --fontsize-label: 12px;
+
+    --family-IBM: 'IBM Plex Sans Condensed', "Sans-serif";
 
     --lineheight--1: 28px;
 

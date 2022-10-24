@@ -35,6 +35,6 @@ const BaseModal = (props) => {
   )
 }
 
-BaseModal.prototype = BaseModalProps
+BaseModal.propTypes = BaseModalProps
 
 export default BaseModal

@@ -40,6 +40,6 @@ const RegisterModal = (props) => {
   )
 }
 
-RegisterModal.prototype = RegisterModalProps
+RegisterModal.propTypes = RegisterModalProps
 
 export default RegisterModal
