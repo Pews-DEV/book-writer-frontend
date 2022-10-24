@@ -1,20 +1,51 @@
 {
   "name": "book-writer-frontend",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand --coverage",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/ --ext js,jsx,ts,tsx --max-warnings=0",
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install",
+    "pre-commit": "yarn lint --max-warnings=0",
+    "lint-staged": "npx --no-install lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint:fix",
+      "yarn test --bail --findRelatedTests || exit 0"
+    ]
   },
   "dependencies": {
-    "next": "12.0.10",
+    "next": "12.1.6",
+    "next-pwa": "5.4.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.3"
+    "react-modal": "3.14.4",
+    "styled-components": "5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "7.17.8",
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "12.1.2",
+    "babel-jest": "27.5.1",
+    "babel-plugin-styled-components": "2.0.6",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10"
+    "eslint-config-next": "12.0.10",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "jest": "27.5.1",
+    "jest-dom": "4.0.0",
+    "jest-styled-components": "7.0.8",
+    "lint-staged": "12.3.7",
+    "prettier": "2.6.2",
+    "prettier-eslint": "13.0.0"
   }
 }
